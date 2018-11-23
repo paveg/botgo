@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 
+	"github.com/k0kubun/pp"
 	"github.com/kelseyhightower/envconfig"
 	"github.com/nlopes/slack"
 )
@@ -36,6 +36,6 @@ func _main(args []string) int {
 	if err != nil {
 		log.Printf("[ERROR] Failed to AuthTest: %s\n", err)
 	}
-	fmt.Printf("response: %#v", res)
+	pp.Printf("response: %v", res)
 	return 0
 }

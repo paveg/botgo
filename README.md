@@ -12,10 +12,17 @@ $ cd botgo
 
 ## Run
 
+### without Container
+
+```bash
+$ make build
+$ make run
+```
+
 ### with Container
 
 ```bash
 # Please set env as a reference; .envrc-example .
-$ make build # app root
-$ make run
+$ make dkr.build # app root
+$ make dkr.run
 ```

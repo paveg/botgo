@@ -120,3 +120,4 @@ vendor/
 # for direnv
 .envrc
 
+bin/
